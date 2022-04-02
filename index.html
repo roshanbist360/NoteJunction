@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	    
+        <title>Note Junction</title>
+
+		<!--  Auto Refresh Meta Tag -->
+		<!-- <meta http-equiv="Refresh" content="2"> -->
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">	
+
+		<!--   CSS file included -->
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<!-- cdn for fontawesome -->
+		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+		<!-- FAVICONS ICON -->
+		<link rel="icon" type="image/png" href="images/icon.png">
+
+        <!--  Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">	
+
+        <!--  animate.css cdn to use animations -->
+        <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+        <!-- jquery cdn -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- for owl carasoul -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
+
+        <!-- Using flat icons -->
+        <!-- <link rel="stylesheet" type="text/css" href="font/flaticon.css"> -->
+
+        <!-- cdn for ion icons used in side bar menu -->
+        <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>  
+    </head>
+
+ <body>
+
+   <!--  ======================Navbar Started=============================================
+    =============================================================================== -->
+    <section class="myNavbar" id="section1">
+            <div class="logo">
+                <img src="images/logo2.png" alt="logo">
+            </div>
+      
+            <div class="nav-menus">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#aboutUs">About Us</a></li>
+                    <li><a href="#services">Services</a></li>                  
+                    <li><a href="download.html">Bsc.CSIT</a></li>
+                    <li><a href="#">BIT</a></li>
+                    <li><a href="#">BCA</a></li>  
+                </ul>  
+            </div>
+            
+            <!-- for side bars menu on click -->
+            <div class="menubar" id="menu" onclick="openNav()">
+                 <ion-icon name="list-outline"></ion-icon>
+            </div>
+
+            <!-- mobile responsive side nav -->
+                <div class="sideNav" id="sideNavv">
+                     <div id="close-sidebar" onclick="closeNav()">
+                          <i class="far fa-long-arrow-alt-right fa-2x"></i>
+                     </div>
+
+                     <div class="logo2">
+                         <img src="images/logo2.png" alt="Logo">
+                     </div>
+                        
+                     <ul>
+                          <li><a href="#"><ion-icon name="home-outline"></ion-icon> Home</a></li>
+                          <li><a href="#aboutUs"><ion-icon name="person-circle-outline"></ion-icon> About Us</a></li>
+                          <li><a href="#services"><ion-icon name="timer-outline"></ion-icon> Services</a></li>
+                          <li><a href="download.html"><ion-icon name="book-outline"></ion-icon> Bsc. CSIT</a></li>
+                          <li><a href="#portfolio"><ion-icon name="book-outline"></ion-icon> BIT</a></li>
+                          <li><a href="contact.html"><ion-icon name="book-outline"></ion-icon>  BCA</a></li>
+                     </ul>
+
+                     <div id="design1">
+                          <img src="images/design1.png" alt="png design">
+                     </div>                      
+                </div>
+    </section>
+       
+    
+    <!--  ======================Homepage Started=============================================
+    =============================================================================== -->
+    <section class="mySection" onclick="closeNav()"> 
+        <div class="homeBg">
+              <img src="images/homeBg.png" alt="Background Image">
+        </div>
+
+        <div class="home-text">
+          <span class="hello"><span>N</span><span class="type"></span></span>
+          <p class="textBest">(Best Note Provider).</p>
+          <p class="hellotxt">
+            This website is designed for all IT students to provide best notes based on revised syllabus and other study materials.We are mainly active on facebook page stay connected.
+          </p>
+       </div>
+    </section>
+
+
+    <!--  ======================About Us Started=============================================
+    =============================================================================== -->
+    <section class="aboutUs" id="aboutUs" onclick="closeNav()">
+            <div class="head">
+                  <h1>About Us</h1>
+            </div>
+            
+            <div class="main">
+                <div class="left">
+                 <p><span>Note Junction (Old Hello Programmers)</span> is founded by Roshan Bist (Bsc.CSIT TU student currently studying at Siddhanath Science Campus, Mahendranager).As we all know that CSIT course was changed from 2074 and as Iam the 2075 batch student it was hard for me to find notes that are revised syllabus based, exam oriented and easy to understand.<p>
+
+                 <p>So I prepared notes in 1<sup>st</sup> semester for IIT and C which was liked by many friends of my batch. Later notes for C++ and MP was liked by many students all over Nepal.I got too good reviews about my notes in my facebook inbox so I decided to continue the notes and this gave rise to Note Junction.I want to give special thanks to friend PM Prabin Bhusal and Pawan Kharel and all csit enrolled friends for their huge support and love.Thank You.</p>
+                </div>
+
+                <div class="right">
+                     <img src="images/roshan.png" alt="Photo">
+                </div>
+            </div>
+    </section>
+    
+
+    <!--  ======================Services Started=============================================
+    =============================================================================== -->
+    <section class="services" id="services" onclick="closeNav()">
+             <h1>Services</h1>
+             <div class="myServices">
+                   <div class="serviceCard">
+                       <img src="images/telemarketer.png" alt="Png image">
+                       <h3>24/7 Support</h3>
+                       <p>We provide instant replies on facebook page for your queries as soon as possible we are able.</p>
+                   </div>
+
+                   <div class="serviceCard">
+                       <img src="images/notebook.png" alt="Png image">
+                       <h3>Best Notes</h3>
+                       <p>We provide best handwritten, micro-syllabus based as well as exam oriented notes.</p>
+                   </div>
+                   
+                   <div class="serviceCard">
+                       <img src="images/refresh.png" alt="Png image">
+                       <h3>Keep Updated</h3>
+                       <p>We provide instant updates on facebook page about new notices and updates about IT.</p>
+                   </div>
+             </div>
+    </section>
+
+
+
+    <!--  ==========Testimonial section starts===========
+========================================= -->
+<section class="py-5 testimonial" onclick="closeNav()">
+    <header class="section-header text-center px-2">
+        <h3>Testimonials <br><i class="fas fa-quote-left fa-2x"></i></h3>
+    </header>
+    <div class="owl-carousel owl-theme">
+        <div class="item">
+            <div class="sub-itm">
+                <div class="car-img text-center">
+                    <img src="images/subash.jpg" alt="Image">
+                </div>
+                <div class="car-content text-center">
+                    <h4>Subash Poudel</h4>
+                    <span>Patan Multiple Campus</span>
+                    <p>I was wonderning what to read and how to read, then I found helloprogrammers the best one.Iam following helloprogrammers since my first-sem.</p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="sub-itm">
+                <div class="car-img text-center">
+                    <img src="images/karishma.jpg" alt="Image">
+                </div>
+                <div class="car-content text-center">
+                    <h4>Karishma Bogati</h4>
+                    <span>Everest Engineering College</span>
+                    <p>Thanks for your handwritten notes which match our syllabus thus it is very easy to prepare myself for my board exams.</p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="sub-itm">
+                <div class="car-img text-center">
+                    <img src="images/bipin.jpg" alt="Image">
+                </div>
+                <div class="car-content text-center">
+                    <h4>Bipin GC</h4>
+                    <span>Butwal Multiple Campus,Butwal</span>
+                    <p>Helloprogrammers Team ,you are the best because you brought out the best handwritten notes for us..</p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="sub-itm">
+                <div class="car-img text-center">
+                    <img src="images/ruby.jpg" alt="Image">
+                </div>
+                <div class="car-content text-center">
+                    <h4>Rubi Xetri(Rabina Karki)</h4>
+                    <span>Padmakanya Multiple Campus</span>
+                    <p>Helloprogrammers Team is the best teacher from the heart which makes everything easy to understand and memorise.</p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="sub-itm">
+                <div class="car-img text-center">
+                    <img src="images/srishti.jpg" alt="Image">
+                </div>
+                <div class="car-content text-center">
+                    <h4>Srishti Gyawali</h4>
+                    <span>Butwal Multiple Campus,Butwal</span>
+                    <p>When anyone asks about what to read and how to read then our classroom makes noise 
+                    that helloprogrammers is the best and only one.</p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="sub-itm">
+                <div class="car-img text-center">
+                    <img src="images/hiramani.jpg" alt="Image">
+                </div>
+                <div class="car-content text-center">
+                    <h4>Hiramani Dahal</h4>
+                    <span>Mahendra Multiple Campus,Nepaljung</span>
+                    <p>We are blessed that we got helloprogrammers as our Helping friend for our study related materials and recent news and updates.</p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="sub-itm">
+                <div class="car-img text-center">
+                    <img src="images/mahesh.jpg" alt="Image">
+                </div>
+                <div class="car-content text-center">
+                    <h4>Mahesh Nath</h4>
+                    <span>SNSC,Mahendranagar</span>
+                    <p>I found helloprogrammers best of best among all handwritten notes, helloprogrammers team as co-operative and friendly.</p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="sub-itm">
+                <div class="car-img text-center">
+                    <img src="images/bigyan.jpg" alt="Image">
+                </div>
+                <div class="car-content text-center">
+                    <h4>Bigyan Luitel</h4>
+                    <span>Everest Engineering College</span>
+                    <p>I am very thankful to my friends Pawan and Prabin for best handwritten notes.Because of their hardwork now I am able to access whole notes of my semester.</p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="sub-itm">
+                <div class="car-img text-center">
+                    <img src="images/adesh.jpg" alt="Image">
+                </div>
+                <div class="car-content text-center">
+                    <h4>Adesh Pokhrel</h4>
+                    <span>Madan Bhandari Memorial College</span>
+                    <p>Thank you helloprogrammers for working hard on handwritten notes.We are getting best notes and best way to prepare for board exams.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--  ========== Main footer starts===========
+========================================= -->
+<section onclick="closeNav()" class="footer">
+    <div class="text-white bg-dark">
+        <div class="container-fluid ftr pt-4 pb-4">
+            <div class="row foot pl-lg-5 pr-lg-5 p-sm-3">
+                <div class="col-lg-3 col-md-6 col-6 pt-2">
+                    <div class="logo2">
+                         <img src="images/logo2.png" alt="Logo" class="mb-4">
+                    </div>
+                    
+                    <p class="textfot">Helloprogrammers is the best choice for IT related related study materials based on revised
+                    micro-syllabus,Recent news and notice updates and more.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6 pt-5 pl-lg-5">
+                    <h3>Useful Links</h3>
+                    <div class="mt-3 lnks" id="footerLinks">
+                        <li>
+                            <a href="index.html" class="text-decoration-none text-white">  <span class="lnk">Home</span></a>
+                            <br>
+                            <a href="#aboutUs" class="text-decoration-none text-white"> <span class="lnk">About Us</span></a>
+                            <br>
+                            <a href="download.html" class="text-decoration-none text-white">   <span class="lnk">CSIT</span></a>
+                            <br>
+                            <a href="#" class="text-decoration-none text-white">  <span class="lnk">BEIT</span></a>
+                            <br>
+                            <a href="#myservices"class="text-decoration-none text-white">  <span class="lnk">BCA</span></a>
+                        </li>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6 pt-5">
+                    <h3>Contact Us</h3>
+                    <div>
+                       <div  class="p-2" id="phn">
+                            <div class="hd1">  <i class="fas fa-phone-alt mb-2"></i> <span>Phone:</span>  </div>
+                            <a href="tel:9806470952" class="text-white text-decoration-none"> <span class="footerPhHover">
+                             Ncell: 9806470952</span></a>
+                            <br>
+                             <a href="tel:9806470952" class="text-white text-decoration-none"> <span class="footerPhHover">
+                             Ntc: 9866100816</span></a>
+                       </div>
+                    
+                       <div class="fsmedia">
+                            <span>Facebook: </span>
+                            <a href="https://www.facebook.com/helloprogrammers/"><img src="images/fb.jpg" alt="Icon"></a>
+                       </div>
+                    </div>
+               </div>
+            <div class="textfot col-lg-3 col-md-6 col-6 pt-5">
+                <h3>Our Goal</h3>
+                <p class="mt-3">All the essential notes of CSIT, BEIT, BIT and BE.Soft for Nepalese IT students with lots of news and information regarding new Technology...</p>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<footer>&#169; All Rights Reserved by Note Junction.</footer>
+       
+
+       <!-- Optional JavaScript -->
+       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+       <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+       <script src="typed.min.js"></script> <!-- for making Hello programmers title auto typing -->
+        <script> 
+          var typed = new Typed('.type', {
+          strings: ['ote Junction'],
+          typeSpeed: 120,
+          backSpeed:120,
+          loop:true,
+          backDelay: 900,
+          showCursor: false,
+          });
+        </script>
+
+
+         <!-- jquery cdn -->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+         
+         <!-- For auto slider/carasoul cdn js owl carosoul -->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+         <script type="text/javascript">
+         //========Jquery  plugins=============
+         // Testimonials carousel (uses the Owl Carousel library)
+         $('.owl-carousel').owlCarousel({
+         loop:true,
+         margin:10,
+         nav:false,
+         dots:true,
+         autoplay:true,
+         autoplaySpeed: 1000,
+         autoplayTimeout: 8000,
+         number:1,
+         responsive:{
+         0:{
+         items:1
+         },
+         600:{
+         items:1
+         },
+         1000:{
+         items:2
+         }
+         }
+         })
+         </script>
+
+
+        <script type="text/javascript">               
+            // JS DOM for well working of sidebar menu
+            function openNav(){
+                document.getElementById('close-sidebar').style.display="block";
+                document.getElementById('sideNavv').style.width="200px";
+                
+                var element = document.getElementById("sideNavv");
+                element.classList.add("overlay");
+            };
+
+            function closeNav(){
+                document.getElementById('close-sidebar').style.display="none";
+                document.getElementById('sideNavv').style.width="0px";
+
+                var element = document.getElementById("sideNavv");
+                element.classList.remove("overlay"); 
+            };
+        </script>   
+ </body>
+</html>
